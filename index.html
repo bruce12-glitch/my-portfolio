@@ -11,6 +11,7 @@
   <body>
     <div class="site-shell">
       <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+      <div class="scroll-progress" aria-hidden="true"><span></span></div>
       <div class="cursor-glow" aria-hidden="true"></div>
       <div class="noise" aria-hidden="true"></div>
 
@@ -22,8 +23,9 @@
         <nav class="desktop-nav" aria-label="Main navigation">
           <a class="active" href="#top">01 <span>Home</span></a>
           <a href="#about">02 <span>About</span></a>
-          <a href="#work">03 <span>Work</span></a>
-          <a href="#stack">04 <span>Stack</span></a>
+          <a href="#approach">03 <span>Method</span></a>
+          <a href="#work">04 <span>Work</span></a>
+          <a href="#stack">05 <span>Stack</span></a>
         </nav>
         <a class="header-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">
@@ -34,8 +36,9 @@
       <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
         <a href="#top">01 <span>Home</span></a>
         <a href="#about">02 <span>About</span></a>
-        <a href="#work">03 <span>Work</span></a>
-        <a href="#stack">04 <span>Stack</span></a>
+        <a href="#approach">03 <span>Method</span></a>
+        <a href="#work">04 <span>Work</span></a>
+        <a href="#stack">05 <span>Stack</span></a>
         <a class="mobile-talk" href="#contact">Start a conversation <span>↗</span></a>
       </nav>
 
@@ -112,9 +115,56 @@
           </div>
         </section>
 
+        <section class="approach section-pad" id="approach" aria-labelledby="approach-title">
+          <div class="section-kicker reveal">03 / The build loop</div>
+          <div class="approach-heading reveal">
+            <div>
+              <h2 id="approach-title">Less noise.<br /><em>More signal.</em></h2>
+            </div>
+            <div class="approach-summary">
+              <span class="micro-label">MY METHOD / 3 MOVES</span>
+              <p>Good engineering starts before the first component. I move from the human problem to the smallest useful system, then make it durable.</p>
+            </div>
+          </div>
+          <div class="process-grid">
+            <article class="process-card process-card-primary reveal" data-tilt>
+              <span class="process-number">01</span>
+              <div class="process-icon process-icon-radar" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+              <h3>Find the signal</h3>
+              <p>Understand the people, constraints, and moments that make a product matter.</p>
+              <span class="process-caption">listen / frame / focus</span>
+            </article>
+            <article class="process-card reveal reveal-delay" data-tilt>
+              <span class="process-number">02</span>
+              <div class="process-icon process-icon-stack" aria-hidden="true"><i></i><i></i><i></i></div>
+              <h3>Shape the system</h3>
+              <p>Turn the hard parts into clear architecture, simple interfaces, and testable decisions.</p>
+              <span class="process-caption">model / design / compose</span>
+            </article>
+            <article class="process-card reveal" data-tilt>
+              <span class="process-number">03</span>
+              <div class="process-icon process-icon-pulse" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+              <h3>Ship with intent</h3>
+              <p>Measure what helps, remove what doesn’t, and leave the next person a better foundation.</p>
+              <span class="process-caption">build / learn / improve</span>
+            </article>
+          </div>
+          <div class="principles-grid reveal">
+            <div class="principles-copy">
+              <span class="micro-label">A FEW THINGS I BELIEVE</span>
+              <h3>Technology should feel<br /><em>quietly extraordinary.</em></h3>
+              <p>The best work does not ask people to admire the machinery. It gives them confidence, clarity, and a little more room to think.</p>
+            </div>
+            <div class="terminal" aria-label="Build principles">
+              <div class="terminal-top"><span><i></i><i></i><i></i></span><span>principles.txt</span><span>⌘</span></div>
+              <div class="terminal-body"><p><b>01</b> <span>security</span> <em>is a feature</em></p><p><b>02</b> <span>clarity</span> <em>scales further</em></p><p><b>03</b> <span>edge cases</span> <em>are the main case</em></p><p><b>04</b> <span>ship small</span> <em>learn fast</em></p><p class="terminal-cursor"><b>›</b> <span>make it useful</span><i></i></p></div>
+            </div>
+          </div>
+        </section>
+
         <section class="work section-pad" id="work" aria-labelledby="work-title">
           <div class="section-heading reveal">
-            <div class="section-kicker">03 / Selected output</div>
+            <div class="section-kicker">04 / Selected output</div>
             <h2 id="work-title">Work with a<br /><em>point of view.</em></h2>
             <p>Products and systems built to make the complicated feel possible.</p>
           </div>
@@ -134,17 +184,17 @@
                 <div class="network-art" aria-hidden="true"><span class="network-core">VC</span><i></i><i></i><i></i><i></i><b></b><b></b><b></b></div>
                 <div class="art-label">TRUST / <span>CHAIN</span></div>
               </div>
-              <div class="project-info"><div><h3>VendorChain</h3><p>Blockchain-backed vendor partnerships with compliance automation and supply-chain visibility.</p></div><a class="project-arrow" href="https://github.com/Inbasekaran12/VENDOR-CHAIN---UROP" target="_blank" rel="noreferrer" aria-label="View VendorChain on GitHub">↗</a></div>
+              <div class="project-info"><div><h3>VendorChain</h3><p>Blockchain-backed vendor partnerships with compliance automation and supply-chain visibility.</p><button class="case-trigger" type="button" data-project="vendorchain">View case notes <span>↗</span></button></div><a class="project-arrow" href="https://github.com/Inbasekaran12/VENDOR-CHAIN---UROP" target="_blank" rel="noreferrer" aria-label="View VendorChain on GitHub">↗</a></div>
               <div class="project-tags"><span>Hyperledger</span><span>Smart contracts</span><span>Docker</span></div>
             </article>
 
-            <article class="project-card reveal reveal-delay" data-category="ai product" data-tilt>
+            <article class="project-card reveal reveal-delay" data-category="ai" data-tilt>
               <div class="project-art art-medi">
                 <div class="art-topline"><span>02 — 2025</span><span>Healthcare / AI</span></div>
                 <div class="medicine-ui" aria-hidden="true"><div class="ui-top"><span>MEDI</span><b>09:41</b></div><div class="ui-ring"><strong>82<small>%</small></strong><span>adherence</span></div><div class="ui-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="ui-bottom"><span>next reminder</span><b>08:30 AM</b></div></div>
                 <div class="art-label">CARE / <span>CONTROL</span></div>
               </div>
-              <div class="project-info"><div><h3>MediTrack</h3><p>A calmer way to manage medicines, reminders, expiry alerts, and care data.</p></div><a class="project-arrow" href="https://github.com/Inbasekaran12/MEDITRACK" target="_blank" rel="noreferrer" aria-label="View MediTrack on GitHub">↗</a></div>
+              <div class="project-info"><div><h3>MediTrack</h3><p>A calmer way to manage medicines, reminders, expiry alerts, and care data.</p><button class="case-trigger" type="button" data-project="meditrack">View case notes <span>↗</span></button></div><a class="project-arrow" href="https://github.com/Inbasekaran12/MEDITRACK" target="_blank" rel="noreferrer" aria-label="View MediTrack on GitHub">↗</a></div>
               <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>MySQL</span></div>
             </article>
 
@@ -154,7 +204,7 @@
                 <div class="train-ui" aria-hidden="true"><div class="route-line"><span class="active-stop">MAS</span><i></i><i></i><i></i><span>NDLS</span></div><div class="train-box"><b>EXPRESS / 12621</b><span>ON SCHEDULE</span></div><div class="train-stats"><span><b>18</b> coaches</span><span><b>05:40</b> departure</span></div></div>
                 <div class="art-label">MOVE / <span>FORWARD</span></div>
               </div>
-              <div class="project-info"><div><h3>Train Consist</h3><p>Clearer scheduling and configuration tools for complex railway operations.</p></div><a class="project-arrow" href="https://github.com/Inbasekaran12/TrainConsistManagementApp" target="_blank" rel="noreferrer" aria-label="View Train Consist on GitHub">↗</a></div>
+              <div class="project-info"><div><h3>Train Consist</h3><p>Clearer scheduling and configuration tools for complex railway operations.</p><button class="case-trigger" type="button" data-project="trainconsist">View case notes <span>↗</span></button></div><a class="project-arrow" href="https://github.com/Inbasekaran12/TrainConsistManagementApp" target="_blank" rel="noreferrer" aria-label="View Train Consist on GitHub">↗</a></div>
               <div class="project-tags"><span>Java</span><span>OOP</span><span>JDBC</span></div>
             </article>
 
@@ -164,7 +214,7 @@
                 <div class="hotel-ui" aria-hidden="true"><div class="hotel-sun"></div><div class="hotel-window"><i></i><i></i><i></i><i></i></div><div class="hotel-card"><span>stay / 04</span><b>find your<br />somewhere</b></div></div>
                 <div class="art-label">REST / <span>RECHARGE</span></div>
               </div>
-              <div class="project-info"><div><h3>Hotel Booking</h3><p>A full-stack reservation experience designed around availability and ease.</p></div><a class="project-arrow" href="https://github.com/Inbasekaran12/Hotel_Booking_App" target="_blank" rel="noreferrer" aria-label="View Hotel Booking on GitHub">↗</a></div>
+              <div class="project-info"><div><h3>Hotel Booking</h3><p>A full-stack reservation experience designed around availability and ease.</p><button class="case-trigger" type="button" data-project="hotelbooking">View case notes <span>↗</span></button></div><a class="project-arrow" href="https://github.com/Inbasekaran12/Hotel_Booking_App" target="_blank" rel="noreferrer" aria-label="View Hotel Booking on GitHub">↗</a></div>
               <div class="project-tags"><span>Spring Boot</span><span>MySQL</span><span>Payments</span></div>
             </article>
 
@@ -174,7 +224,7 @@
                 <div class="measure-ui" aria-hidden="true"><span class="measure-number">12.5</span><span class="measure-unit">kg</span><div class="measure-rule"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="measure-result">= 27.55 lb</span></div>
                 <div class="art-label">SCALE / <span>EXACTLY</span></div>
               </div>
-              <div class="project-info"><div><h3>Quantity Measure</h3><p>Precision conversion built with extensibility and testability at its core.</p></div><a class="project-arrow" href="https://github.com/Inbasekaran12/Quantity_Measurement_App" target="_blank" rel="noreferrer" aria-label="View Quantity Measure on GitHub">↗</a></div>
+              <div class="project-info"><div><h3>Quantity Measure</h3><p>Precision conversion built with extensibility and testability at its core.</p><button class="case-trigger" type="button" data-project="quantity">View case notes <span>↗</span></button></div><a class="project-arrow" href="https://github.com/Inbasekaran12/Quantity_Measurement_App" target="_blank" rel="noreferrer" aria-label="View Quantity Measure on GitHub">↗</a></div>
               <div class="project-tags"><span>Java</span><span>JUnit</span><span>Design patterns</span></div>
             </article>
 
@@ -184,7 +234,7 @@
                 <div class="palindrome-ui" aria-hidden="true"><div><span>racecar</span><b>↔</b><span>racecar</span></div><small>SYMMETRY CONFIRMED</small><i></i><i></i><i></i></div>
                 <div class="art-label">THINK / <span>BOTH WAYS</span></div>
               </div>
-              <div class="project-info"><div><h3>Palindrome Checker</h3><p>A small system with a big lesson: elegant logic makes edge cases feel simple.</p></div><a class="project-arrow" href="https://github.com/Inbasekaran12/PalindromeCheckerApp" target="_blank" rel="noreferrer" aria-label="View Palindrome Checker on GitHub">↗</a></div>
+              <div class="project-info"><div><h3>Palindrome Checker</h3><p>A small system with a big lesson: elegant logic makes edge cases feel simple.</p><button class="case-trigger" type="button" data-project="palindrome">View case notes <span>↗</span></button></div><a class="project-arrow" href="https://github.com/Inbasekaran12/PalindromeCheckerApp" target="_blank" rel="noreferrer" aria-label="View Palindrome Checker on GitHub">↗</a></div>
               <div class="project-tags"><span>Java</span><span>Algorithms</span><span>Testing</span></div>
             </article>
           </div>
@@ -194,7 +244,7 @@
         <section class="stack section-pad" id="stack" aria-labelledby="stack-title">
           <div class="stack-grid">
             <div class="stack-intro reveal">
-              <div class="section-kicker">04 / Under the hood</div>
+              <div class="section-kicker">05 / Under the hood</div>
               <h2 id="stack-title">The toolkit<br />behind the <em>signal.</em></h2>
               <p>Tools are only useful when they disappear into the experience. These are the materials I reach for to make ideas real.</p>
               <div class="stack-orbit" aria-hidden="true"><span>JAVA</span><span>PY</span><span>JS</span><span>AI</span><div>✳</div></div>
@@ -211,7 +261,7 @@
 
         <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
           <div class="contact-panel reveal">
-            <div class="contact-topline"><span>05 / Open channel</span><span><span class="status-dot"></span> Available for the right idea</span></div>
+            <div class="contact-topline"><span>06 / Open channel</span><span><span class="status-dot"></span> Available for the right idea</span></div>
             <div class="contact-content">
               <div><h2 id="contact-title">Have a good<br /><em>problem?</em></h2><p>Let’s turn the rough shape of an idea into something people can actually use.</p></div>
               <a class="contact-email" href="mailto:in5904@srmist.edu.in">in5904@srmist.edu.in <span>↗</span></a>
@@ -226,6 +276,17 @@
         <span>Built with intention · 2026</span>
         <a class="back-top" href="#top">Back to top ↑</a>
       </footer>
+
+      <div class="case-modal" id="case-modal" hidden>
+        <div class="case-modal-backdrop" data-modal-close></div>
+        <section class="case-dialog" role="dialog" aria-modal="true" aria-labelledby="case-title">
+          <div class="case-dialog-top"><span class="modal-kicker" id="case-kicker">CASE NOTES / 01</span><button class="modal-close" type="button" data-modal-close aria-label="Close case notes">×</button></div>
+          <div class="case-dialog-heading"><h2 id="case-title">Project title</h2><a id="case-github" href="#" target="_blank" rel="noreferrer">Open repository <span>↗</span></a></div>
+          <p class="case-summary" id="case-summary"></p>
+          <div class="case-detail-grid"><div><span class="micro-label">THE BRIEF</span><p id="case-brief"></p></div><div><span class="micro-label">THE BUILD</span><p id="case-build"></p></div><div><span class="micro-label">THE TAKEAWAY</span><p id="case-takeaway"></p></div></div>
+          <div class="case-tech" id="case-tech"></div>
+        </section>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
