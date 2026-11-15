@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
+import { withBase } from "@/lib/site-assets";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Inbasekaran S." }],
   icons: {
-    icon: "/logo.svg",
+    icon: withBase("/logo.svg"),
   },
   openGraph: {
     title: "Inbasekaran S. — Researcher · Reader · Author",

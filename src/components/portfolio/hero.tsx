@@ -1,9 +1,9 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowRight, ArrowUpRight, BookOpen, Github, GraduationCap, Linkedin, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { withBase } from "@/lib/site-assets"
 import { cn } from "@/lib/utils"
 
 const EXTERNAL_LINKS = [
@@ -186,13 +186,11 @@ export function Hero() {
           >
             <div className="rounded-lg border border-border bg-card p-3 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.35)] transition-transform duration-500 hover:rotate-0">
               <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-secondary">
-                <Image
-                  src="/images/portrait-real.jpg"
+                <img
+                  src={withBase("/images/portrait-real.jpg")}
                   alt="Portrait of Inbasekaran S"
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 90vw, 40vw"
-                  className="object-cover"
+                  className="h-full w-full object-cover"
+                  loading="eager"
                 />
               </div>
             </div>

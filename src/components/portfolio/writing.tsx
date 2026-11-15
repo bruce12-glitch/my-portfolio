@@ -1,8 +1,8 @@
 "use client"
 
-import Image from "next/image"
 import { ArrowUpRight, PenLine } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
+import { withBase } from "@/lib/site-assets"
 import { Reveal } from "./reveal"
 
 export function Writing() {
@@ -15,12 +15,11 @@ export function Writing() {
             <figure>
               <div className="rounded-lg border border-border bg-card p-3 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.35)] transition-transform duration-500 hover:-rotate-1">
                 <div className="relative aspect-[2/3] overflow-hidden rounded-md bg-secondary">
-                  <Image
-                    src="/images/book-neither-living-nor-dying.png"
+                  <img
+                    src={withBase("/images/book-neither-living-nor-dying.png")}
                     alt="Book cover for Neither Living Nor Dying: Reflections on the Middle by Inbasekaran S"
-                    fill
-                    sizes="(max-width: 1024px) 60vw, 28vw"
-                    className="object-cover"
+                    className="h-full w-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               </div>
