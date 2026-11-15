@@ -58,3 +58,11 @@ server.log
 /tool-results/
 /agent-ctx/
 .zscripts/dev.pid
+
+# sandbox scaffolding - kept locally, not part of the portfolio source
+/examples/
+/tests/
+/download/
+/mini-services/
+/.zscripts/
+/Caddyfile
