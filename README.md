@@ -4,6 +4,8 @@ Personal portfolio for **Inbasekaran S.** — Researcher · Reader · Author.
 
 Third-year undergraduate at SRM Institute of Science and Technology (SRMIST) working on **LLM inference and memory systems** — context pruning, KV-cache management, and the information theory behind those choices. Founder of ILRL Labs, author of *Neither Living Nor Dying*.
 
+**Live site:** <https://bruce12-glitch.github.io/my-portfolio/>
+
 ## Sections
 
 - **Hero** — intro, external profiles (Scholar, GitHub, LinkedIn, blog)
@@ -27,6 +29,16 @@ bun install
 bun run dev    # http://localhost:3000
 bun run lint
 ```
+
+## Deployment
+
+The site is statically exported and published to **GitHub Pages** from the `gh-pages` branch:
+
+```bash
+bun run build:pages    # static export -> dist-pages/  (BUILD_TARGET=pages)
+```
+
+With `BUILD_TARGET=pages`, `next.config.ts` switches to export mode with `basePath: /my-portfolio`, trailing slashes and unoptimized images.
 
 ## Links
 
