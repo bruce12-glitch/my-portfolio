@@ -40,7 +40,7 @@ const ENTRIES: ResearchEntry[] = [
       { label: "Read paper", href: "https://arxiv.org/abs/2610.09757", external: true },
       {
         label: "Google Scholar",
-        href: "https://scholar.google.com/scholar?q=EntroPrefill",
+        href: "https://scholar.google.com/citations?user=kNn4OZIAAAAJ&hl=en&authuser=5",
         external: true,
       },
     ],

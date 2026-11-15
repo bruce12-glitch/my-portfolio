@@ -72,7 +72,7 @@ export function Contact() {
                 <span className="label-caps block text-primary-foreground/60">
                   Send me an email
                 </span>
-                <span className="mt-1 block break-all font-mono text-sm sm:text-base">
+                <span className="mt-1 block break-all font-mono text-xs sm:whitespace-nowrap sm:text-sm md:text-base">
                   {EMAIL}
                 </span>
               </span>

@@ -30,7 +30,7 @@ export function About() {
                 </div>
               </div>
               <figcaption className="mt-3 text-center text-xs text-muted-foreground">
-                Portrait of Inbasekaran S
+                Hand-drawn portrait of Inbasekaran S
               </figcaption>
             </figure>
           </Reveal>

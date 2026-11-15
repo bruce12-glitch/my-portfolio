@@ -143,7 +143,7 @@
 
 @layer utilities {
   .font-serif-display {
-    font-family: var(--font-serif);
+    font-family: var(--font-newsreader), Georgia, "Times New Roman", serif;
     font-optical-sizing: auto;
   }
   .label-caps {

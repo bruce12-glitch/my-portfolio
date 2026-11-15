@@ -14,9 +14,9 @@ export function Writing() {
           <Reveal className="mx-auto w-full max-w-[260px] lg:max-w-sm">
             <figure>
               <div className="rounded-lg border border-border bg-card p-3 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.35)] transition-transform duration-500 hover:-rotate-1">
-                <div className="relative aspect-[9/16] overflow-hidden rounded-md bg-secondary">
+                <div className="relative aspect-[2/3] overflow-hidden rounded-md bg-secondary">
                   <Image
-                    src="/images/book-cover.png"
+                    src="/images/book-neither-living-nor-dying.png"
                     alt="Book cover for Neither Living Nor Dying: Reflections on the Middle by Inbasekaran S"
                     fill
                     sizes="(max-width: 1024px) 60vw, 28vw"
@@ -61,7 +61,7 @@ export function Writing() {
                 </p>
                 <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2">
                   <a
-                    href="https://www.amazon.in/s?k=Neither+Living+Nor+Dying+Reflection+of+the+Middle"
+                    href="https://www.amazon.com/dp/B0HG7J6NSS/ref=tmm_pap_swatch_0?_encoding=UTF8&sr=8-1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-85"
@@ -73,8 +73,9 @@ export function Writing() {
                     />
                   </a>
                   <a
-                    href="#writing"
-                    title="Neuroplastic — the blog"
+                    href="https://bruce12-glitch.github.io/Neuroplastic/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group inline-flex items-center gap-1.5 text-sm font-medium text-foreground transition-colors hover:text-brand"
                   >
                     <PenLine className="h-4 w-4 text-brand" aria-hidden />

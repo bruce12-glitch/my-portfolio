@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils"
 const EXTERNAL_LINKS = [
   {
     label: "Google Scholar",
-    href: "https://scholar.google.com/scholar?q=Inbasekaran+S",
+    href: "https://scholar.google.com/citations?user=kNn4OZIAAAAJ&hl=en&authuser=5",
     icon: GraduationCap,
   },
   {
@@ -19,12 +19,12 @@ const EXTERNAL_LINKS = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/inbasekaran-s",
+    href: "https://www.linkedin.com/in/inbasekaran-s-106a90383",
     icon: Linkedin,
   },
   {
     label: "Blog",
-    href: "#writing",
+    href: "https://bruce12-glitch.github.io/Neuroplastic/",
     icon: BookOpen,
   },
 ]
@@ -187,8 +187,8 @@ export function Hero() {
             <div className="rounded-lg border border-border bg-card p-3 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.35)] transition-transform duration-500 hover:rotate-0">
               <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-secondary">
                 <Image
-                  src="/images/portrait-hero.png"
-                  alt="Hand-drawn portrait of Inbasekaran S"
+                  src="/images/portrait-real.jpg"
+                  alt="Portrait of Inbasekaran S"
                   fill
                   priority
                   sizes="(max-width: 1024px) 90vw, 40vw"
@@ -201,7 +201,7 @@ export function Hero() {
                 "mt-3 text-center text-xs text-muted-foreground"
               )}
             >
-              Hand-drawn portrait of Inbasekaran S
+              Portrait of Inbasekaran S
             </figcaption>
           </motion.figure>
         </div>
