@@ -20,6 +20,27 @@ const newsreader = Newsreader({
   style: ["normal", "italic"],
 });
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Inbasekaran S.",
+  jobTitle: "Undergraduate Researcher — LLM Inference & Memory Systems",
+  alumniOf: "SRM Institute of Science and Technology",
+  knowsAbout: [
+    "LLM inference",
+    "KV-cache management",
+    "Context pruning",
+    "Information theory",
+    "Zero-trust software verification",
+  ],
+  sameAs: [
+    "https://scholar.google.com/citations?user=kNn4OZIAAAAJ",
+    "https://github.com/bruce12-glitch",
+    "https://www.linkedin.com/in/inbasekaran-s-106a90383",
+    "https://bruce12-glitch.github.io/Neuroplastic/",
+  ],
+};
+
 export const metadata: Metadata = {
   title: "Inbasekaran S. — Researcher · Reader · Author",
   description:
@@ -62,6 +83,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} antialiased bg-background text-foreground`}
       >
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-primary-foreground"
+        >
+          Skip to content
+        </a>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           {children}
           <Toaster />

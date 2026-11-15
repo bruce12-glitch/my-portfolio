@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <SiteNav />
-      <main className="flex-1">
+      <main id="main" className="flex-1">
         <Hero />
         <Research />
         <About />
